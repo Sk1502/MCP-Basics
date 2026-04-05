@@ -16,10 +16,10 @@ A practical implementation of the Model Context Protocol (MCP) demonstrating how
 
 MCP is a standardized protocol that allows AI models to reliably interact with tools and data sources. Unlike generic APIs:
 
-✅ **Automatic Tool Discovery** - AI models know available tools and their parameters  
-✅ **Standardized Communication** - Consistent protocol across implementations  
-✅ **Structured Results** - Predictable, typed responses from tool calls  
-✅ **Built-in Validation** - Parameter validation at protocol level  
+- **Automatic Tool Discovery** - AI models know available tools and their parameters  
+- **Standardized Communication** - Consistent protocol across implementations  
+- **Structured Results** - Predictable, typed responses from tool calls  
+- **Built-in Validation** - Parameter validation at protocol level  
 
 ### MCP vs FastAPI
 
@@ -169,16 +169,16 @@ Weather response: its always sunny in Hyderabad
 **How:** Direct stdin/stdout communication between processes
 
 **Pros:**
-- ✅ No network overhead
-- ✅ Fast process-to-process communication
-- ✅ No port conflicts
-- ✅ Secure by default (local-only)
-- ✅ Simple setup (auto-spawned)
+- No network overhead
+- Fast process-to-process communication
+- No port conflicts
+- Secure by default (local-only)
+- Simple setup (auto-spawned)
 
 **Cons:**
-- ❌ Local-only (no remote access)
-- ❌ Single connection per instance
-- ❌ Limited scalability
+- Local-only (no remote access)
+- Single connection per instance
+- Limited scalability
 
 **Best For:** Development, local tools, Claude Desktop
 
@@ -187,17 +187,17 @@ Weather response: its always sunny in Hyderabad
 **How:** Standard HTTP API on localhost:8000
 
 **Pros:**
-- ✅ Remote access capability
-- ✅ Multiple simultaneous clients
-- ✅ Standard protocol
-- ✅ Cloud-ready
-- ✅ Load balanceable
+- Remote access capability
+- Multiple simultaneous clients
+- Standard protocol
+- Cloud-ready
+- Load balanceable
 
 **Cons:**
-- ❌ Network overhead
-- ❌ Port management required
-- ❌ Requires authentication for security
-- ❌ More complex setup
+- Network overhead
+- Port management required
+- Requires authentication for security
+- More complex setup
 
 **Best For:** Remote servers, cloud deployment, multiple clients
 
@@ -205,13 +205,13 @@ Weather response: its always sunny in Hyderabad
 
 | Feature | Stdio | HTTP |
 |---------|-------|------|
-| **Performance** | 🚀 Fastest | ⏱️ Network latency |
-| **Remote Access** | ❌ | ✅ |
-| **Multiple Clients** | ❌ | ✅ |
-| **Complexity** | 🟢 Simple | 🟠 Moderate |
-| **Setup Time** | ⚡ Auto | 🔧 Manual |
-| **Port Conflicts** | ❌ | ⚠️ Possible |
-| **Security** | 🔒 Built-in | 🔐 Auth needed |
+| **Performance** | Fast | Network latency |
+| **Remote Access** | No | Yes |
+| **Multiple Clients** | No | Yes |
+| **Complexity** | Simple | Moderate |
+| **Setup Time** | Auto | Manual |
+| **Port Conflicts** | No | Possible |
+| **Security** | Built-in | Auth needed |
 
 ---
 
@@ -316,13 +316,13 @@ LangGraph agents can:
 
 After completing this project, you'll understand:
 
-✅ What MCP is and why it's important for AI integration  
-✅ How to build MCP servers with FastMCP  
-✅ Difference between Stdio and HTTP transports  
-✅ Building AI agents that use multiple tools  
-✅ Multi-server architecture and coordination  
-✅ Tool schemas and automatic discovery  
-✅ Effective prompting for reliable tool usage  
+- What MCP is and why it's important for AI integration  
+- How to build MCP servers with FastMCP  
+- Difference between Stdio and HTTP transports  
+- Building AI agents that use multiple tools  
+- Multi-server architecture and coordination  
+- Tool schemas and automatic discovery  
+- Effective prompting for reliable tool usage  
 
 ---
 
@@ -352,5 +352,6 @@ After completing this project, you'll understand:
 
 ## License
 
-MIT#   M C P - B a s i c s  
+MIT#   M C P - B a s i c s 
+ 
  
