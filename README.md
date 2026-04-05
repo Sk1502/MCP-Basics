@@ -16,10 +16,10 @@ A practical implementation of the Model Context Protocol (MCP) demonstrating how
 
 MCP is a standardized protocol that allows AI models to reliably interact with tools and data sources. Unlike generic APIs:
 
-- **Automatic Tool Discovery** - AI models know available tools and their parameters  
-- **Standardized Communication** - Consistent protocol across implementations  
-- **Structured Results** - Predictable, typed responses from tool calls  
-- **Built-in Validation** - Parameter validation at protocol level  
+- **Automatic Tool Discovery** - AI models know available tools and their parameters
+- **Standardized Communication** - Consistent protocol across implementations
+- **Structured Results** - Predictable, typed responses from tool calls
+- **Built-in Validation** - Parameter validation at protocol level
 
 ### MCP vs FastAPI
 
@@ -48,23 +48,23 @@ MCP_Basics/
 ## Components
 
 ### 1. Math Server (`mathserver.py`)
-**Transport:** Stdio (direct process communication)  
-**Port:** N/A (subprocess)  
-**Status:** Auto-started by client  
+**Transport:** Stdio (direct process communication)
+**Port:** N/A (subprocess)
+**Status:** Auto-started by client
 **Tools:**
 - `add(a: int, b: int)` → int
 - `multiply(a: int, b: int)` → int
 
 ### 2. Weather Server (`weather.py`)
-**Transport:** HTTP (streamable-http)  
-**Port:** localhost:8000  
-**Status:** Manual start required  
+**Transport:** HTTP (streamable-http)
+**Port:** localhost:8000
+**Status:** Manual start required
 **Tools:**
 - `get_weather(location: str)` → str
 
 ### 3. Client Agent (`client.py`)
-**Framework:** LangGraph + LangChain  
-**LLM:** Groq (Llama 3.1 8B)  
+**Framework:** LangGraph + LangChain
+**LLM:** Groq (Llama 3.1 8B)
 **Responsibilities:**
 - Connect to both MCP servers
 - Retrieve available tools automatically
@@ -349,9 +349,3 @@ After completing this project, you'll understand:
 - [Claude Desktop with MCP](https://modelcontextprotocol.io/clients/claude-desktop)
 
 ---
-
-## License
-
-MIT#   M C P - B a s i c s 
- 
- 
